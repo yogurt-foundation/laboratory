@@ -1,0 +1,16 @@
+/**
+ * @file: _autoFontSize.scss
+ */
+
+// allow the utility to set min and max it's property, value is based
+// on yogurt methodology which is `xs`, `sm`, `md`, `lg`, `xl`, etc.
+
+// @class: text-fluid text-min-{value} text-max-{value}
+
+@each $modifier1, $value1 in $font-size {
+  @each $modifier2, $value2 in $font-size {
+    .text-fluid.text-min-#{$modifier1}.text-max-#{$modifier2} {
+      @include fluid(font-size, $minScreen, $maxScreen, $value1, $value2)
+    }
+  }
+}
