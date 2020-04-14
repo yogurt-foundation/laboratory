@@ -15,6 +15,16 @@
   </y>
   ```
 
+### _build
+
+```bash
+# build for testing
+$ yarn build
+
+# build for development
+$ yarn watch
+```
+
 ---
 
 [MIT](https://github.com/yogurt-foundation/laboratory/blob/master/LICENSE)
