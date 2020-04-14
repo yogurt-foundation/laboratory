@@ -1,0 +1,30 @@
+{
+  "name": "yogurt-css-laboratory",
+  "version": "1.0.0",
+  "description": "A laboratory for implement and testing Yogurt CSS prototypes.",
+  "main": "",
+  "scripts": {
+    "gulp": "gulp",
+    "watch": "gulp watch",
+    "build": "npm run gulp sass-raw && npm run gulp sass-min"
+  },
+  "keywords": [
+    "css-laboratory",
+    "css-library",
+    "css-utilites",
+    "functional-css",
+    "lowlevel-css"
+  ],
+  "author": "Loouis Low <loouis@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-rename": "^2.0.0"
+  },
+  "dependencies": {}
+}
