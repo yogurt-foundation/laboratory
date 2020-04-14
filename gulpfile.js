@@ -6,9 +6,6 @@ const rename = require('gulp-rename')
 const sass = require('gulp-sass')
 const sassGlob = require('gulp-sass-glob')
 
-const { version } = require('./package.json')
-
-
 // ...minify/preprocess scss
 
 // outputStyle: `expanded` for debugging,
