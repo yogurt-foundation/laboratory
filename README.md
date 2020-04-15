@@ -2,6 +2,14 @@
 
 > A laboratory for implement and testing Yogurt CSS prototypes.
 
+<p align="left">
+  <a href="https://discord.gg/A62YjNR" 
+     target="_blank">
+    <img title="Join the chat at https://discord.gg/A62YjNR" 
+         src="https://img.shields.io/badge/DISCORD-JOIN_CHANNEL_%E2%86%92-7289da.svg?style=flat">
+  </a>
+</p>
+
 ### _prototypes
 
 - `Auto-Fluid` concept, allow the utility to set thresholds with min and max value of its' property and determine the values from the screen size thresholds.
