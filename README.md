@@ -14,6 +14,14 @@
     ...
   </y>
   ```
+  - `padding` component in `spacing` utility,
+
+  ```html
+  <!-- Example -->
+  <y class="p-fluid p-min-4 p-max-24">
+    ...
+  </y>
+  ```
 
 ### _build
 
