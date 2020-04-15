@@ -19,8 +19,6 @@ $separator: ":"; // do not empty!
 // default is empty, to enable add `!important`.
 $override: "";
 
-$of: \/; // escaping `forward-slash`
-
 /*
   @params $modifier, $value
 */
@@ -30,6 +28,7 @@ $of: \/; // escaping `forward-slash`
 $minScreen: 20rem;
 $maxScreen: 50rem;
 
+/* font size */
 
 $font-size:
   (xs, 0.75rem),
@@ -44,7 +43,3 @@ $font-size:
   (6xl, 4rem),
   (7xl, 5rem),
   (8xl, 6rem);
-
-
-
-
