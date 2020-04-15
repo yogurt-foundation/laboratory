@@ -22,6 +22,14 @@
     ...
   </y>
   ```
+  - `margin` component in `spacing` utility,
+
+  ```html
+  <!-- Example -->
+  <y class="m-fluid m-min-2 m-max-10">
+    ...
+  </y>
+  ```
 
 ### _build
 

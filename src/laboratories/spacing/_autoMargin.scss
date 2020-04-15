@@ -1,0 +1,16 @@
+/**
+ * @file: _autoMargin.scss
+ */
+
+// allow the utility to set min and max it's property, the value
+// linear such as 1, 2, 3 or 2, 4, 6, etc.
+
+// @class: m-fluid m-min-{value} m-max-{value}
+
+@each $modifier1, $value1 in $spacing {
+  @each $modifier2, $value2 in $spacing {
+    .m-fluid.m-min-#{$modifier1}.m-max-#{$modifier2} {
+      @include fluid(margin, $minScreen, $maxScreen, $value1, $value2)
+    }
+  }
+}
