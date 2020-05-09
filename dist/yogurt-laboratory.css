@@ -589,9 +589,16 @@ y {
 */
 /* font size */
 /**
- * @file: _rules.scss
+ * @file: _fluid.scss
  */
-/* fluid */
+/* 
+  fluid 
+  @param {$properties} css properties
+  @param {$min-vw} min viewport width
+  @param {$max-vw} max viewport width
+  @param {$min-value} min threshold value
+  @param {$max-value} max threshold value
+*/
 /**/
 /**
  * @file: _autoMargin.scss
