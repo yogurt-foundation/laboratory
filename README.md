@@ -12,6 +12,17 @@
 
 ### _prototypes
 
+- divide each child elements with a bottom border,
+
+  ```html
+  <!-- Exmaple -->
+  <y class="dissect-y-2">
+    <y>A</y>
+    <y>B</y>
+    ...
+  </y>
+  ```
+
 - fix spacing in between the child elements without adding `p-{value}` or `m-{value}` to every each effected elements.
 
   - `equal` component in `spacing` utility,
