@@ -14,6 +14,8 @@
 
 - divide each child elements with a bottom border,
 
+  - `dissect` component in `border` utility,
+
   ```html
   <!-- Exmaple -->
   <y class="dissect-y-2">
