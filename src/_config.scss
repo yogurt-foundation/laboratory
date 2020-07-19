@@ -44,6 +44,14 @@ $font-size:
   (7xl, 5rem),
   (8xl, 6rem);
 
+/* flex */
+
+$flex:
+  (1, 1 1 0%),
+  (auto, 1 1 auto),
+  (initial, 0 1 auto),
+  (none, none);
+
 $spacing: // for margin, padding
   (0, 0),
   (1, 0.25rem),
@@ -63,5 +71,6 @@ $spacing: // for margin, padding
   (48, 12rem),
   (56, 14rem),
   (64, 16rem);
+
 
 

@@ -1,0 +1,31 @@
+/**
+ * @file: _atrules.scss
+ */
+
+// class options
+$default: "."; // is class
+
+
+@mixin setRule(
+  $prefix: null,
+  $pseudo: null,
+  $class: null,
+  $selector: null,
+  $modifier: null,
+  $option: null,
+  $property1: null,
+  $value1: null,
+  $property2: null,
+  $value2: null,
+  $property3: null,
+  $value3: null,
+  $property4: null,
+  $value4: null,
+  ) {
+  #{$prefix}#{$class}#{$id}#{$selector}#{$modifier}#{$option}#{$pseudo} {
+    #{$property1}: #{$value1};
+    #{$property2}: #{$value2};
+    #{$property3}: #{$value3};
+    #{$property4}: #{$value4}
+  }
+}
