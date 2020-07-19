@@ -16,13 +16,15 @@
 @import 'config';
 
 @import 'mixin/atRules';
-@import 'mixin/fluid';
+// @import 'mixin/fluid';
 
 // test rats
-@import 'laboratories/spacing/autoMargin';
-@import 'laboratories/spacing/autoPadding';
-@import 'laboratories/spacing/equal';
+// @import 'laboratories/spacing/autoMargin';
+// @import 'laboratories/spacing/autoPadding';
+// @import 'laboratories/spacing/equal';
 
-@import 'laboratories/typography/autoFontSize';
+// @import 'laboratories/typography/autoFontSize';
+
+@import 'laboratories/border/dissect';
 
 /*! laboratory.css | MIT License | github.com/yogurt-foundation/laboratory */
