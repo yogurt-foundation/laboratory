@@ -17,7 +17,7 @@
   - `dissect` component in `border` utility,
 
   ```html
-  <!-- Exmaple -->
+  <!-- Example -->
   <y class="dissect-y-2">
     <y>A</y>
     <y>B</y>
