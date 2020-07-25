@@ -606,6 +606,9 @@ y {
 */
 /**/
 /**
+ * @file: _pluginMaker.scss
+ */
+/**
  * @file: _autoMargin.scss
  */
 .m-fluid.m-min-0.m-max-0 {
@@ -13590,6 +13593,30 @@ template {
 
 .dissect-current > :not(template) ~ :not(template) {
   border-color: currentColor;
+}
+
+/**
+ * @file: _plugins.scss
+ * @description: write your plugins here.
+ */
+.text-xs {
+  font-size: 0.75.rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
 }
 
 /*! laboratory.css | MIT License | github.com/yogurt-foundation/laboratory */

@@ -17,6 +17,7 @@
 
 @import 'mixin/atRules';
 @import 'mixin/fluid';
+@import 'mixin/pluginMaker';
 
 // test rats
 @import 'laboratories/spacing/autoMargin';
@@ -26,5 +27,7 @@
 @import 'laboratories/typography/autoFontSize';
 
 @import 'laboratories/border/dissect';
+
+@import 'laboratories/plugins/plugins'
 
 /*! laboratory.css | MIT License | github.com/yogurt-foundation/laboratory */
