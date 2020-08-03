@@ -9,7 +9,7 @@
  * @license: MIT
  */
 
-// @import 'reset'; // normalize.css v8.0.1
+@import 'reset'; // normalize.css v8.0.1
 
 /*! laboratory.css | MIT License | github.com/yogurt-foundation/laboratory */
 
@@ -19,7 +19,7 @@
 @import 'mixin/fluid';
 @import 'mixin/pluginMaker';
 
-test rats
+// test rats
 @import 'laboratories/spacing/autoMargin';
 @import 'laboratories/spacing/autoPadding';
 @import 'laboratories/spacing/equal';
