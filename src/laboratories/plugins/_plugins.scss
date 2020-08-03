@@ -4,9 +4,9 @@
  */
 
 @include plugin(
-  $utility: ('text'),
-  $variant: $none,
-  $property: ('font-size'),
+  $utility: 'text',
+  // $variant: 'responsive'
+  $property: 'font-size',
   $modifier: (
     'xs': '0.75.rem',
     'sm': '0.875rem',
