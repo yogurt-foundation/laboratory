@@ -5,11 +5,26 @@ const postCss = require('gulp-postcss')
 const rename = require('gulp-rename')
 const sass = require('gulp-sass')
 const sassGlob = require('gulp-sass-glob')
+const version = require('gulp-version-number')
+const gulpLoadPlugins = require('gulp-load-plugins')
+const inject = gulpLoadPlugins()
 
 // ...minify/preprocess scss
 
 // outputStyle: `expanded` for debugging,
 // `compressed` for production.
+
+const versionConfig = {
+  'value': '%MDS%', // using MDS hash
+  'append': { 'key': 'v', 'to': ['css', 'js'] }
+}
+gulp.task('html', () => {
+  return gulp.src('testing.html')
+    // inject versioning to (css,js) static assets
+    .pipe(inject.versionNumber(versionConfig))
+    .pipe(gulp.dest('./'))
+})
+
 
 const srcScssPath = 'src/laboratory.scss'
 const distCssPath = 'dist'
@@ -40,13 +55,15 @@ gulp.task('watch', gulp.series([
 
     'sass-raw',
     'sass-min',
+    'html'
 
   ], () => {
 
     gulp.watch(watchSrcScssPath,
       gulp.series([
         'sass-raw',
-        'sass-min'
+        'sass-min',
+        'html'
       ])
     )
 
