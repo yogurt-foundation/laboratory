@@ -12,6 +12,28 @@
 
 ### _prototypes
 
+- use `background-image` to draw decorative borders,
+
+  - `bg-border` component in `backgrounds` utility,
+
+  ```html
+  <!-- Example -->
+  <y class="bg-border length-20 space-30 size-12 angle-45">
+    ...
+  </y>
+  ```
+
+- sets animation to an element with duration and delay controllers,
+
+  - `animation` component in `animations` utility,
+
+  ```html
+  <!-- Example -->
+  <y class="animation blur-in duration-2000 delay-2 infinite">
+    ...
+  </y>
+  ```
+
 - divide each child elements with a bottom border,
 
   - `dissect` component in `border` utility,

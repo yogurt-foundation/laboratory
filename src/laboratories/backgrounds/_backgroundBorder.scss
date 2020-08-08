@@ -2,11 +2,16 @@
  * @file: _backgroundBorder.scss
  */
 
+// @class: bg-border size-{value} space-{value} length-{value} angle-{value}
+
+// (!!) angle-{value} has negative value
+
 @mixin backgroundBorder(
   $prefix: null,
   $pseudo: null,
   $class: null
   ) {
+  // (static)
   .bg-border {
     --bg-border-color: #333333;
     --bg-border-angle-left: 0deg;
