@@ -1,0 +1,23 @@
+/**
+ * @file: _backgroundColor.scss
+ */
+
+@mixin backgroundColor(
+  $prefix: null,
+  $pseudo: null,
+  $class: null
+  ) {
+  @each $color, $modifier, $value in $colors {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "bg-",
+      $modifier: "#{$color}-#{$modifier}",
+      $property1: "background-color",
+      $value1: #{$value}
+    )
+  }
+}
+
+@include backgroundColor ($class: $default)

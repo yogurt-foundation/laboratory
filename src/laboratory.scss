@@ -16,17 +16,20 @@
 @import 'config';
 
 @import 'mixin/atRules';
-@import 'mixin/fluid';
-@import 'mixin/pluginMaker';
+// @import 'mixin/fluid';
+// @import 'mixin/pluginMaker';
 
 // test rats
-@import 'laboratories/spacing/autoMargin';
-@import 'laboratories/spacing/autoPadding';
-@import 'laboratories/spacing/equal';
-@import 'laboratories/typography/autoFontSize';
-@import 'laboratories/border/dissect';
-@import 'laboratories/plugins/plugins';
-@import 'laboratories/animations/animation';
-@import 'laboratories/backgrounds/backgroundBorder';
+// @import 'laboratories/spacing/autoMargin';
+// @import 'laboratories/spacing/autoPadding';
+// @import 'laboratories/spacing/equal';
+// @import 'laboratories/typography/autoFontSize';
+// @import 'laboratories/typography/textColor';
+// @import 'laboratories/border/dissect';
+// @import 'laboratories/plugins/plugins';
+// @import 'laboratories/animations/animation';
+// @import 'laboratories/backgrounds/backgroundBorder';
+@import 'laboratories/backgrounds/backgroundGradient';
+// @import 'laboratories/backgrounds/backgroundColor';
 
 /*! laboratory.css | MIT License | github.com/yogurt-foundation/laboratory */

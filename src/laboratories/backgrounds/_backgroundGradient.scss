@@ -1,0 +1,91 @@
+/**
+ * @file: _backgroundGradient.scss
+ */
+
+// @class: bg-gradient start-{color value} stop-{color value} angle-{value} start-{size value} stop-{size value}
+
+// (!!) angle-{value} has negative value
+
+@mixin backgroundGradient(
+  $prefix: null,
+  $pseudo: null,
+  $class: null
+  ) {
+  @include setRule(
+    $prefix: $prefix,
+    $pseudo: $pseudo,
+    $class: $class,
+    $selector: "bg-gradient",
+    $property1: "background",
+    $value1: "linear-gradient(var(--bg-gradient-angle), var(--bg-gradient-start-color) var(--bg-gradient-primary), var(--bg-gradient-stop-color) var(--bg-gradient-secondary))"
+  )
+  @each $modifier, $value in $background-gradient-angle {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "bg-gradient.angle-",
+      $modifier: $modifier,
+      $property1: "--bg-gradient-angle",
+      $value1: #{$value}
+    )
+  }
+  @each $modifier, $value in $background-gradient-angle {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "bg-gradient.-angle-",
+      $modifier: $modifier,
+      $property1: "--bg-gradient-angle",
+      $value1: -#{$value}
+    )
+  }
+  @each $modifier, $value in $background-gradient-start-stop {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "bg-gradient.start-",
+      $modifier: $modifier,
+      $property1: "--bg-gradient-primary",
+      $value1: #{$value}
+    )
+  }
+  @each $modifier, $value in $background-gradient-start-stop {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "bg-gradient.stop-",
+      $modifier: $modifier,
+      $property1: "--bg-gradient-secondary",
+      $value1: #{$value}
+    )
+  }
+  @each $color, $modifier, $value in $colors {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "bg-gradient.start-",
+      $modifier: "#{$color}-#{$modifier}",
+      $property1: "--bg-gradient-start-color",
+      $value1: #{$value}
+    )
+  }
+  @each $color, $modifier, $value in $colors {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "bg-gradient.stop-",
+      $modifier: "#{$color}-#{$modifier}",
+      $property1: "--bg-gradient-stop-color",
+      $value1: #{$value}
+    )
+  }
+}
+
+@include backgroundGradient($class: $default)
+
