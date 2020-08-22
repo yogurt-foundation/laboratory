@@ -628,6 +628,14 @@ y {
  * responsive-focus, responsive-active, responsive-visited, responsive-disabled.
  */
 /**
+ * @file: _debug.scss
+ */
+[debug="true"] * {
+  background: rgba(255, 0, 0, .1);
+  box-shadow: 0 0 0 1px red;
+}
+
+/**
  * @file: _autoMargin.scss
  */
 .m-fluid.m-min-0.m-max-0 {
@@ -14216,30 +14224,6 @@ template {
 }
 
 /**
- * @file: _plugins.scss
- * @description: write your plugins here.
- */
-.text-xs {
-  font-size: 0.75.rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-}
-
-.text-md {
-  font-size: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-}
-
-/**
  * @file: _animation.scss
  */
 .fx {
@@ -16211,6 +16195,30 @@ template {
 
 .bg-yellow-900 {
   background-color: #744210;
+}
+
+/**
+ * @file: _plugins.scss
+ * @description: write your plugins here.
+ */
+.zzz-xs {
+  font-size: 0.75.rem;
+}
+
+.zzz-sm {
+  font-size: 0.875rem;
+}
+
+.zzz-md {
+  font-size: 1rem;
+}
+
+.zzz-lg {
+  font-size: 1.125rem;
+}
+
+.zzz-xl {
+  font-size: 1.25rem;
 }
 
 /*! laboratory.css | MIT License | github.com/yogurt-foundation/laboratory */

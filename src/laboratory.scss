@@ -20,6 +20,7 @@
 @import 'mixin/pluginMaker';
 
 // test rats
+@import 'laboratories/debug/debug';
 @import 'laboratories/spacing/autoMargin';
 @import 'laboratories/spacing/autoPadding';
 @import 'laboratories/spacing/equal';
@@ -27,10 +28,10 @@
 @import 'laboratories/typography/textColor';
 @import 'laboratories/typography/textClamp';
 @import 'laboratories/border/dissect';
-@import 'laboratories/plugins/plugins';
 @import 'laboratories/animations/animation';
 @import 'laboratories/backgrounds/backgroundBorder';
 @import 'laboratories/backgrounds/backgroundGradient';
 @import 'laboratories/backgrounds/backgroundColor';
+@import 'laboratories/plugins/plugins';
 
 /*! laboratory.css | MIT License | github.com/yogurt-foundation/laboratory */
