@@ -1,8 +1,8 @@
 /**
- * @file: _debug.scss
+ * @file: _debugger.scss
  */
 
-@mixin debug(
+@mixin debugger(
   $prefix: null,
   $pseudo: null,
   $class: null
@@ -12,8 +12,10 @@
     $property1: "background",
     $value1: "rgba(255, 0, 0, .1)",
     $property2: "box-shadow",
-    $value2: "0 0 0 1px red"
+    $value2: "0 0 0 1px red",
+    $property3: "outline",
+    $value3: "1px solid red"
   )
 }
 
-@include debug()
+@include debugger()
