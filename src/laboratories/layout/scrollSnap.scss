@@ -1,0 +1,36 @@
+/**
+ * @file: _scrollSnap.scss
+ */
+
+@mixin scrollSnap(
+  $prefix: null,
+  $pseudo: null,
+  $class: null
+  ) {
+  @each $modifier, $value in $scroll-snap-type {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "scroll-snap.",
+      $modifier: $modifier,
+      $property1: "scroll-snap-type",
+      $value1: "#{$value}"
+    )
+  }
+  @each $modifier, $value in $scroll-snap-align {
+    @include setRule(
+      $prefix: $prefix,
+      $pseudo: $pseudo,
+      $class: $class,
+      $selector: "scroll-snap.align-",
+      $modifier: "#{$modifier} > *",
+      $property1: "scroll-snap-align",
+      $value1: "#{$value}"
+    )
+  }
+}
+
+@include scrollSnap($class: $default)
+
+
