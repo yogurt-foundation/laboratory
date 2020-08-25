@@ -5,12 +5,21 @@
 $verticalTypeBase: 4;
 $baseFontSize: 16;
 
-@function typeOffset($lh, $fontSize, $descenderHeightScale) {
-  $lineHeightScale: $lh / $fontSize;
-  @return ($lineHeightScale - 1) / 2 + $descenderHeightScale;
+@function typeOffset(
+  $lh, 
+  $fontSize, 
+  $descenderHeightScale
+  ) {
+    $lineHeightScale: $lh / $fontSize;
+    @return ($lineHeightScale - 1) / 2 + $descenderHeightScale;
 }
 
-@mixin trimmer($fontSizeModifier, $rowSpanModifier, $descenderHeightScale, $capHeight) {
+@mixin trimmer(
+  $fontSizeModifier, 
+  $rowSpanModifier, 
+  $descenderHeightScale, 
+  $capHeight
+  ) {
   $fontSize: $fontSizeModifier * $baseFontSize;
   $lineHeight: $rowSpanModifier * $verticalTypeBase;
   $typeOffset: typeOffset($lineHeight, $fontSize, $descenderHeightScale);
@@ -35,7 +44,10 @@ $baseFontSize: 16;
   }
 }
 
-@mixin trim($fontSizeModifier, $rowSpanModifier) {
+@mixin trim(
+  $fontSizeModifier, 
+  $rowSpanModifier
+  ) {
   $fontDescenderHeightScale: 0.11;
   $fontCapHeight: 0.75;
   @include trimmer($fontSizeModifier, $rowSpanModifier, $fontDescenderHeightScale, $fontCapHeight);
