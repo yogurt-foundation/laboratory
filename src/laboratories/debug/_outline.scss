@@ -1,14 +1,14 @@
 /**
- * @file: _debugger.scss
+ * @file: _outline.scss
  */
 
-@mixin debugger(
+@mixin debugOutline(
   $prefix: null,
   $pseudo: null,
   $class: null
   ) {
   @include setRule(
-    $selector: '[debug="true"] *',
+    $selector: '[debug="outline"] *',
     $property1: "background",
     $value1: "rgba(255, 0, 0, .1)",
     $property2: "box-shadow",
@@ -18,4 +18,4 @@
   )
 }
 
-@include debugger()
+@include debugOutline()

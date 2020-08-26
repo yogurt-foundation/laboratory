@@ -16,10 +16,12 @@
       $class: $class,
       $selector: "flex-gap-",
       $modifier: $modifier,
-      $property1: "margin",
-      $value1: calc(-1 * #{$value}) 0 0 calc(-1 * #{$value}),
-      $property2: "width",
-      $value2: calc(100% + #{$value})
+      $property1: "--flex-gap",
+      $value1: "0",
+      $property2: "margin",
+      $value2: "calc(-1 * #{$value}) 0 0 calc(-1 * #{$value})",
+      $property3: "width",
+      $value3: "calc(100% + #{$value})"
     )
     @include setRule(
       $prefix: $prefix,
