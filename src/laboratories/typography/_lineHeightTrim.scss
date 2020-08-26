@@ -10,8 +10,8 @@ $baseFontSize: 16;
   $fontSize, 
   $descenderHeightScale
   ) {
-    $lineHeightScale: $lh / $fontSize;
-    @return ($lineHeightScale - 1) / 2 + $descenderHeightScale;
+  $lineHeightScale: $lh / $fontSize;
+  @return ($lineHeightScale - 1) / 2 + $descenderHeightScale;
 }
 
 @mixin trimmer(
@@ -32,8 +32,7 @@ $baseFontSize: 16;
   
   $preventCollapse: 1;
   
-  /*font-size: #{$fontSize}px;*/
-  font-size: inherit;
+  font-size: #{$fontSize}px;
   line-height: #{$lineHeight}px;
   transform: translateY(#{$typeOffset}em);
   padding-top: #{$preventCollapse}px;
@@ -51,7 +50,12 @@ $baseFontSize: 16;
   ) {
   $fontDescenderHeightScale: 0.11;
   $fontCapHeight: 0.75;
-  @include trimmer($fontSizeModifier, $rowSpanModifier, $fontDescenderHeightScale, $fontCapHeight);
+  @include trimmer(
+    $fontSizeModifier, 
+    $rowSpanModifier, 
+    $fontDescenderHeightScale, 
+    $fontCapHeight
+  )
 }
 
 @mixin lineHeightTrim(
