@@ -1,0 +1,48 @@
+/**
+ * @file: _outline.scss
+ */
+
+@mixin debugScreen(
+  $prefix: null,
+  $pseudo: null,
+  $class: null
+  ) {
+  @each $screen, $size in $screens {
+
+    // prefix responsive
+    $responsive-default: ".#{$screen}\\#{$separator}";
+    // prefix responsive with variants
+    $responsive-hover: ".#{$screen}\\:hover\\#{$separator}";
+    $responsive-focus: ".#{$screen}\\:focus\\#{$separator}";
+    $responsive-active: ".#{$screen}\\:active\\#{$separator}";
+    $responsive-visited: ".#{$screen}\\:visited\\#{$separator}";
+    $responsive-disabled: ".#{$screen}\\:disabled\\#{$separator}";
+
+    @media (min-width: #{$size}) {
+      @include setRule(
+        $selector: '[debug="screen"]',
+        $property1: "position",
+        $value1: "absolute",
+        $property2: "top",
+        $value2: "0",
+        $property3: "left",
+        $value3: "0",
+        $property4: "padding",
+        $value4: "3px 8px",
+        $property5: "color",
+        $value5: "white",
+        $property6: "background-color",
+        $value6: "black"
+      )
+      @include setRule(
+        $selector: '[debug="screen"]::after',
+        $property1: "content",
+        $value1: '"screen: #{$screen}"'
+      )
+    }
+
+  }
+}
+
+
+@include debugScreen()

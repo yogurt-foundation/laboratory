@@ -28,6 +28,22 @@ $override: "";
 $minScreen: 20rem;
 $maxScreen: 50rem;
 
+/* screens */
+
+$screens:
+  (xs, 320px), // (primitive)
+  (sm, 640px),
+  (md, 768px),
+  (lg, 1024px),
+  (xl, 1280px),
+  (\32k, 1920px), // 2k
+  // (\33k, 2560px), // 3k
+  (\34k, 3840px); // 4k
+  // (\35k, 5120px), // 5k
+  // (\36k, 5760px), // 6k
+  // (\37k, 7000px), // 7k
+  // (\38k, 7680px); // 8k
+
 /* font size */
 
 $font-size:
@@ -352,3 +368,18 @@ $line-height-trim:
   (7xl, 5, 29.5),
   (8xl, 6, 35.5);
 
+/* debug screen */
+
+$debug-screen:
+  (xs, xs),
+  (sm, sm),
+  (md, md),
+  (lg, lg),
+  (xl, xl),
+  (\32k, 2k),
+  (\33k, 3k),
+  (\34k, 4k),
+  (\35k, 5k),
+  (\36k, 6k),
+  (\37k, 7k),
+  (\38k, 8k);
