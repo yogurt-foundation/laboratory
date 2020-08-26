@@ -15826,7 +15826,8 @@ template {
  * @file: _lineHeightTrim.scss
  */
 .depth-trim-xs {
-  font-size: 12px;
+  /*font-size: 12px;*/
+  font-size: inherit;
   line-height: 18px;
   transform: translateY(0.36em);
   padding-top: 1px;
@@ -15840,7 +15841,8 @@ template {
 }
 
 .depth-trim-sm {
-  font-size: 14px;
+  /*font-size: 14px;*/
+  font-size: inherit;
   line-height: 22px;
   transform: translateY(0.39571em);
   padding-top: 1px;
@@ -15854,7 +15856,8 @@ template {
 }
 
 .depth-trim-md {
-  font-size: 16px;
+  /*font-size: 16px;*/
+  font-size: inherit;
   line-height: 22px;
   transform: translateY(0.2975em);
   padding-top: 1px;
@@ -15868,7 +15871,8 @@ template {
 }
 
 .depth-trim-lg {
-  font-size: 18px;
+  /*font-size: 18px;*/
+  font-size: inherit;
   line-height: 26px;
   transform: translateY(0.33222em);
   padding-top: 1px;
@@ -15882,7 +15886,8 @@ template {
 }
 
 .depth-trim-xl {
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: inherit;
   line-height: 30px;
   transform: translateY(0.36em);
   padding-top: 1px;
@@ -15896,7 +15901,8 @@ template {
 }
 
 .depth-trim-2xl {
-  font-size: 24px;
+  /*font-size: 24px;*/
+  font-size: inherit;
   line-height: 34px;
   transform: translateY(0.31833em);
   padding-top: 1px;
@@ -15910,7 +15916,8 @@ template {
 }
 
 .depth-trim-3xl {
-  font-size: 30px;
+  /*font-size: 30px;*/
+  font-size: inherit;
   line-height: 42px;
   transform: translateY(0.31em);
   padding-top: 1px;
@@ -15924,7 +15931,8 @@ template {
 }
 
 .depth-trim-4xl {
-  font-size: 36px;
+  /*font-size: 36px;*/
+  font-size: inherit;
   line-height: 50px;
   transform: translateY(0.30444em);
   padding-top: 1px;
@@ -15938,7 +15946,8 @@ template {
 }
 
 .depth-trim-5xl {
-  font-size: 48px;
+  /*font-size: 48px;*/
+  font-size: inherit;
   line-height: 70px;
   transform: translateY(0.33917em);
   padding-top: 1px;
@@ -15952,7 +15961,8 @@ template {
 }
 
 .depth-trim-6xl {
-  font-size: 64px;
+  /*font-size: 64px;*/
+  font-size: inherit;
   line-height: 98px;
   transform: translateY(0.37562em);
   padding-top: 1px;
@@ -15966,7 +15976,8 @@ template {
 }
 
 .depth-trim-7xl {
-  font-size: 80px;
+  /*font-size: 80px;*/
+  font-size: inherit;
   line-height: 118px;
   transform: translateY(0.3475em);
   padding-top: 1px;
@@ -15980,7 +15991,8 @@ template {
 }
 
 .depth-trim-8xl {
-  font-size: 96px;
+  /*font-size: 96px;*/
+  font-size: inherit;
   line-height: 142px;
   transform: translateY(0.34958em);
   padding-top: 1px;

@@ -32,7 +32,8 @@ $baseFontSize: 16;
   
   $preventCollapse: 1;
   
-  font-size: #{$fontSize}px;
+  /*font-size: #{$fontSize}px;*/
+  font-size: inherit;
   line-height: #{$lineHeight}px;
   transform: translateY(#{$typeOffset}em);
   padding-top: #{$preventCollapse}px;
