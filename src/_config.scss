@@ -271,6 +271,42 @@ $animation-fade:
  (fade-in-down, opacity, 0, transform, translate3d(0,-100%,0), opacity, 1, transform, translate3d(0,0,0)),
  (fade-in-left, opacity, 0, transform, translate3d(-100%,0,0), opacity, 1, transform, translate3d(0,0,0));
 
+/* filters (brightness, contrast, saturate) */
+
+$filter-compose:
+  (0, 0),
+  (1, 1),
+  (2, 2),
+  (3, 3),
+  (4, 4),
+  (5, 1.24),
+  (6, 1.30),
+  (7, 1.36),
+  (8, 1.42),
+  (9, 1.48),
+  (10, 1.54);
+
+/* filter (blur) */
+
+$filter-blur:
+  (0, 0px),
+  (1, 2px),
+  (2, 4px),
+  (3, 6px),
+  (4, 8px),
+  (5, 10px),
+  (6, 12px),
+  (7, 14px),
+  (8, 16px),
+  (9, 18px),
+  (10, 20px);
+
+/* filter (invert) */
+
+$filter-invert:
+  (0, 0),
+  (1, 1.0);
+
 /* background border */
 
 $background-border-angle:

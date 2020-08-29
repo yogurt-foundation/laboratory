@@ -20,23 +20,24 @@
 @import 'mixin/pluginMaker';
 
 // test rats
-@import 'laboratories/animations/animation';
-@import 'laboratories/backgrounds/backgroundBorder';
-@import 'laboratories/backgrounds/backgroundGradient';
-@import 'laboratories/backgrounds/backgroundColor';
-@import 'laboratories/border/dissect';
-@import 'laboratories/debug/outline';
-@import 'laboratories/debug/screen';
-@import 'laboratories/flexbox/flexGap';
-@import 'laboratories/layout/scrollSnap';
-@import 'laboratories/spacing/autoMargin';
-@import 'laboratories/spacing/autoPadding';
-@import 'laboratories/spacing/equal';
-@import 'laboratories/typography/autoFontSize';
-@import 'laboratories/typography/lineHeightTrim';
-@import 'laboratories/typography/textColor';
-@import 'laboratories/typography/textClamp';
+// @import 'laboratories/animations/animation';
+// @import 'laboratories/backgrounds/backgroundBorder';
+// @import 'laboratories/backgrounds/backgroundGradient';
+// @import 'laboratories/backgrounds/backgroundColor';
+// @import 'laboratories/border/dissect';
+// @import 'laboratories/debug/outline';
+// @import 'laboratories/debug/screen';
+@import 'laboratories/filters/backdropCompose';
+// @import 'laboratories/flexbox/flexGap';
+// @import 'laboratories/layout/scrollSnap';
+// @import 'laboratories/spacing/autoMargin';
+// @import 'laboratories/spacing/autoPadding';
+// @import 'laboratories/spacing/equal';
+// @import 'laboratories/typography/autoFontSize';
+// @import 'laboratories/typography/lineHeightTrim';
+// @import 'laboratories/typography/textColor';
+// @import 'laboratories/typography/textClamp';
 
-@import 'laboratories/plugins/plugins';
+// @import 'laboratories/plugins/plugins';
 
 /*! laboratory.css | MIT License | github.com/yogurt-foundation/laboratory */
