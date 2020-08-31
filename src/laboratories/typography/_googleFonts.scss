@@ -1,0 +1,47 @@
+/**
+ * @file: _googleFonts.scss
+ */
+
+
+/*
+ * Example API,
+ *
+ *  @include google-fonts(
+ *    (
+ *     font: 'Roboto',
+ *     weight: '100;200;300'
+ *    ),
+ *    // ...
+ *  )
+ */
+
+@mixin google-fonts($googlefonts-maps...) {
+  @each $googlefonts in $googlefonts-maps {
+
+    $types: map-get($googlefonts, "font");
+    $weights: map-get($googlefonts, "weight");
+
+    @import url('https://fonts.googleapis.com/css2?family=#{$types}&:wght@#{$weights}&display=swap')
+
+  }
+}
+
+
+@include google-fonts(
+  (
+    font: 'Alata',
+    weight: '100;200;300;400;500;600;700;800;900'
+  ),
+  (
+    font: 'Lato',
+    weight: '100;200;300;400;500;600;700;800;900'
+  ),
+  (
+    font: 'Open++Sans',
+    weight: '100;200;300;400;500;600;700;800;900'
+  ),
+  (
+    font: 'Roboto',
+    weight: '100;200;300;400;500;600;700;800;900'
+  )
+)
