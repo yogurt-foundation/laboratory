@@ -29,6 +29,7 @@ gulp.task('sass-raw', () => {
     .pipe(sassGlob())
     .pipe(sass({ outputStyle: 'expanded' })
       .on('error', sass.logError))
+    .pipe(postCss([autoPrefixer()]))
     .pipe(rename('yogurt-laboratory.css'))
     .pipe(gulp.dest(distCssPath))
 })
