@@ -60,11 +60,11 @@
  * @file: _plugins.scss
  * @description: write your plugins here.
  */
-.\(focus\)xxxx-1:focus {
+.\(hover\)xxxx-1:hover {
   font-size: 1px;
 }
 
-.\(focus\)xxxx-2:focus {
+.\(hover\)xxxx-2:hover {
   font-size: 2px;
 }
 
