@@ -4,14 +4,13 @@
  */
 
 @include plugin(
-  $utility: 'zzz',
-  // $variant: 'responsive'
-  $property: 'font-size',
-  $modifier: (
-    'xs': '0.75.rem',
-    'sm': '0.875rem',
-    'md': '1rem',
-    'lg': '1.125rem',
-    'xl': '1.25rem'
+  (
+    utility: 'xxxx',
+    variant: 'focus',
+    property: 'font-size',
+    modifier: (
+      '1': '1px',
+      '2': '2px'
+    )
   )
 )
