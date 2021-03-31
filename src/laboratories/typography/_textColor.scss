@@ -16,8 +16,8 @@
       $modifier: "#{$color}-#{$modifier}",
       $property1: "color",
       $value1: #{$value}
-    )
+    );
   }
 }
 
-@include textColor ($class: $default)
+@include textColor ($class: $default);

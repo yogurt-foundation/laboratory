@@ -22,7 +22,7 @@
       $value2: "calc(-1 * #{$value}) 0 0 calc(-1 * #{$value})",
       $property3: "width",
       $value3: "calc(100% + #{$value})"
-    )
+    );
     @include setRule(
       $prefix: $prefix,
       $pseudo: $pseudo,
@@ -31,8 +31,8 @@
       $modifier: "#{$modifier} > *",
       $property1: "margin",
       $value1: #{$value} 0 0 #{$value}
-    )
+    );
   }
 }
 
-@include flexGap($class: $default)
+@include flexGap($class: $default);

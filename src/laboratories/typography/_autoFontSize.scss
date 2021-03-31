@@ -10,7 +10,7 @@
 @each $modifier1, $value1 in $font-size {
   @each $modifier2, $value2 in $font-size {
     .text-fluid.text-min-#{$modifier1}.text-max-#{$modifier2} {
-      @include fluid(font-size, $minScreen, $maxScreen, $value1, $value2)
+      @include fluid(font-size, $minScreen, $maxScreen, $value1, $value2);
     }
   }
 }

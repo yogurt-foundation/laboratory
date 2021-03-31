@@ -21,7 +21,7 @@
     $types: map-get($googlefonts, "font");
     $weights: map-get($googlefonts, "weight");
 
-    @import url('https://fonts.googleapis.com/css2?family=#{$types}&:wght@#{$weights}&display=swap')
+    @import url('https://fonts.googleapis.com/css2?family=#{$types}&:wght@#{$weights}&display=swap');
 
   }
 }
@@ -44,4 +44,4 @@
     font: 'Roboto',
     weight: '100;200;300;400;500;600;700;800;900'
   )
-)
+);

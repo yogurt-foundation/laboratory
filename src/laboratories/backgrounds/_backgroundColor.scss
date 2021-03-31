@@ -16,8 +16,8 @@
       $modifier: "#{$color}-#{$modifier}",
       $property1: "background-color",
       $value1: #{$value}
-    )
+    );
   }
 }
 
-@include backgroundColor ($class: $default)
+@include backgroundColor ($class: $default);

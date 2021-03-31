@@ -30,8 +30,8 @@
       $value7: "relative",
       $property8: "visibility",
       $value8: "visible"
-    )
+    );
   }
 }
 
-@include textClamp($class: $default)
+@include textClamp($class: $default);

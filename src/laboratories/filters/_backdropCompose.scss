@@ -22,7 +22,7 @@
     $value4: "0px",
     $property5: "backdrop-filter",
     $value5: brightness(var(--backdrop-brightness)) contrast(var(--backdrop-contrast)) saturate(var(--backdrop-saturate)) blur(var(--backdrop-blur))
-  )
+  );
   @each $modifier, $value in $filter-compose {
     @include setRule(
       $prefix: $prefix,
@@ -32,7 +32,7 @@
       $modifier: $modifier,
       $property1: "--backdrop-brightness",
       $value1: "#{$value}"
-    )
+    );
   }
   @each $modifier, $value in $filter-compose {
     @include setRule(
@@ -43,7 +43,7 @@
       $modifier: $modifier,
       $property1: "--backdrop-contrast",
       $value1: "#{$value}"
-    )
+    );
   }
   @each $modifier, $value in $filter-compose {
     @include setRule(
@@ -54,7 +54,7 @@
       $modifier: $modifier,
       $property1: "--backdrop-saturate",
       $value1: "#{$value}"
-    )
+    );
   }
   @each $modifier, $value in $filter-blur {
     @include setRule(
@@ -65,8 +65,8 @@
       $modifier: $modifier,
       $property1: "--backdrop-blur",
       $value1: "#{$value}"
-    )
+    );
   }
 }
 
-@include filterBackdropCompose($class: $default)
+@include filterBackdropCompose($class: $default);

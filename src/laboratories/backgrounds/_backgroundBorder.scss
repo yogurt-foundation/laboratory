@@ -24,7 +24,7 @@
     $value3: "0 0, 0 0, 100% 0, 0 100%",
     $property4: "background-repeat",
     $value4: "no-repeat"
-  )
+  );
   @each $modifier, $value in $background-border-angle {
     @include setRule(
       $prefix: $prefix,
@@ -40,7 +40,7 @@
       $value3: #{$value},
       $property4: "--bg-border-angle-bottom",
       $value4: #{$value}
-    )
+    );
   }
   @each $modifier, $value in $background-border-angle {
     @include setRule(
@@ -57,7 +57,7 @@
       $value3: #{$value},
       $property4: "--bg-border-angle-bottom",
       $value4: #{$value}
-    )
+    );
   }
   @each $modifier, $value in $background-border-length {
     @include setRule(
@@ -68,7 +68,7 @@
       $modifier: $modifier,
       $property1: "--bg-border-length",
       $value1: #{$value}
-    )
+    );
   }
   @each $modifier, $value in $background-border-space {
     @include setRule(
@@ -79,7 +79,7 @@
       $modifier: $modifier,
       $property1: "--bg-border-space",
       $value1: #{$value}
-    )
+    );
   }
   @each $modifier, $value in $background-border-size {
     @include setRule(
@@ -90,8 +90,8 @@
       $modifier: $modifier,
       $property1: "--bg-border-width",
       $value1: #{$value}
-    )
+    );
   }
 }
 
-@include backgroundBorder($class: $default)
+@include backgroundBorder($class: $default);

@@ -18,7 +18,7 @@
     $selector: "bg-gradient",
     $property1: "background",
     $value1: "linear-gradient(var(--bg-gradient-angle), var(--bg-gradient-start-color) var(--bg-gradient-primary), var(--bg-gradient-stop-color) var(--bg-gradient-secondary))"
-  )
+  );
   @each $modifier, $value in $background-gradient-angle {
     @include setRule(
       $prefix: $prefix,
@@ -28,7 +28,7 @@
       $modifier: $modifier,
       $property1: "--bg-gradient-angle",
       $value1: #{$value}
-    )
+    );
   }
   @each $modifier, $value in $background-gradient-angle {
     @include setRule(
@@ -39,7 +39,7 @@
       $modifier: $modifier,
       $property1: "--bg-gradient-angle",
       $value1: -#{$value}
-    )
+    );
   }
   @each $modifier, $value in $background-gradient-start-stop {
     @include setRule(
@@ -50,7 +50,7 @@
       $modifier: $modifier,
       $property1: "--bg-gradient-primary",
       $value1: #{$value}
-    )
+    );
   }
   @each $modifier, $value in $background-gradient-start-stop {
     @include setRule(
@@ -61,7 +61,7 @@
       $modifier: $modifier,
       $property1: "--bg-gradient-secondary",
       $value1: #{$value}
-    )
+    );
   }
   @each $color, $modifier, $value in $colors {
     @include setRule(
@@ -72,7 +72,7 @@
       $modifier: "#{$color}-#{$modifier}",
       $property1: "--bg-gradient-start-color",
       $value1: #{$value}
-    )
+    );
   }
   @each $color, $modifier, $value in $colors {
     @include setRule(
@@ -83,9 +83,9 @@
       $modifier: "#{$color}-#{$modifier}",
       $property1: "--bg-gradient-stop-color",
       $value1: #{$value}
-    )
+    );
   }
 }
 
-@include backgroundGradient($class: $default)
+@include backgroundGradient($class: $default);
 

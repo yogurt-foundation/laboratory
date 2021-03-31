@@ -10,7 +10,7 @@
 @each $modifier1, $value1 in $spacing {
   @each $modifier2, $value2 in $spacing {
     .p-fluid.p-min-#{$modifier1}.p-max-#{$modifier2} {
-      @include fluid(padding, $minScreen, $maxScreen, $value1, $value2)
+      @include fluid(padding, $minScreen, $maxScreen, $value1, $value2);
     }
   }
 }

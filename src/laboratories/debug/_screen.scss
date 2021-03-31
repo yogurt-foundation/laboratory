@@ -33,16 +33,16 @@
         $value5: "white",
         $property6: "background-color",
         $value6: "black"
-      )
+      );
       @include setRule(
         $selector: '[debug="screen"]::after',
         $property1: "content",
         $value1: '"screen: #{$screen}"'
-      )
+      );
     }
 
   }
 }
 
 
-@include debugScreen()
+@include debugScreen();
